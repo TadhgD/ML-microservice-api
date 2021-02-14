@@ -20,8 +20,4 @@ EXPOSE 80
 
 ## Step 5:
 # Run app.py at container launch
-CMD ['python', 'app.py']
-
-# Copy local source code to image
-#COPY . flask_app/web.py /app/
-#COPY . nlib /app/
+CMD ["python", "app.py"]

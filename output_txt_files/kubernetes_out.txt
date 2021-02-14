@@ -1,1 +1,17 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.ML-microservice-api) ec2-user:~/environment/ML-microservice-api (main) $ ./run_kubernetes.sh 
+pod/mlmicroserviceapi created
+./run_kubernetes.sh: line 14: --port=80: command not found
+NAME                READY   STATUS              RESTARTS   AGE
+mlmicroserviceapi   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+(.ML-microservice-api) ec2-user:~/environment/ML-microservice-api (main) $ kubectl get pods
+NAME                READY   STATUS              RESTARTS   AGE
+mlmicroserviceapi   0/1     ContainerCreating   0          21s
+(.ML-microservice-api) ec2-user:~/environment/ML-microservice-api (main) $ kubectl get pods
+NAME                READY   STATUS    RESTARTS   AGE
+mlmicroserviceapi   1/1     Running   0          34s
+(.ML-microservice-api) ec2-user:~/environment/ML-microservice-api (main) $ kubectl port-forward mlmicroserviceapi 8000:80
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+
+Handling connection for 8000
