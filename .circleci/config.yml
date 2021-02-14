@@ -17,7 +17,7 @@ jobs:
           name: Install dependencies
           command: |
             make setup
-            make activate
+            source ~/.ML-microservice-api/bin/source
             make install
             # Install hadolint
             wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
@@ -31,5 +31,5 @@ jobs:
       - run:
           name: run lint
           command: |
-            make activate
+            source ~/.ML-microservice-api/bin/source
             make lint

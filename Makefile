@@ -10,10 +10,6 @@ setup:
 	# source ~/.devops/bin/activate
 	python3 -m venv ~/.ML-microservice-api
 
-activate:
-	# Activate venv
-	source ~/.ML-microservice-api/bin/activate
-
 install:
 	# This should be run from inside a virtualenv
 	pip install --upgrade pip &&\
