@@ -16,8 +16,9 @@ jobs:
       - run:
           name: Install dependencies
           command: |
-            which python3
-            make setup
+            #which python3
+            #make setup
+            python3 -m venv ~/.ML-microservice-api
             source ~/.ML-microservice-api/bin/source
             make install
             # Install hadolint
