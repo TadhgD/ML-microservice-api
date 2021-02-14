@@ -16,6 +16,7 @@ jobs:
       - run:
           name: Install dependencies
           command: |
+            which python3
             make setup
             source ~/.ML-microservice-api/bin/source
             make install
