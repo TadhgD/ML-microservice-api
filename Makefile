@@ -12,7 +12,7 @@ setup:
 
 activate:
 	# Activate venv
-	~/.ML-microservice-api/bin/activate
+	source ~/.ML-microservice-api/bin/activate
 
 install:
 	# This should be run from inside a virtualenv
