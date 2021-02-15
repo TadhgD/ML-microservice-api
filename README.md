@@ -1,6 +1,19 @@
 # CircleCI Status
 [![TadhgD](https://circleci.com/gh/TadhgD/ML-microservice-api.svg?style=svg)](https://app.circleci.com/pipelines/github/TadhgD/ML-microservice-api)
 
+## Project Summary
+In this project, a pre-trained sklearn model baked into an application, `app.py`, was deployed to a docker container and then ran as a kubernetes deployment.
+
+While setting up the docker container and kubernetes deployment, supporting infrastructure for the project was built out to support CICD practices. For example, the creation of a Makefile, scripts to build the image and the kubernetes deployment, and CircleCI integration.
+
+## Run instructions
+
+See `Running app.py` below
+
+## Summary of files in repo
+
+This project repo contains a Makefile, a requirements file, a Python flask application, bash scripts to facilitate the building of docker images, uploading them to docker, and the deployment of images to kubernetes, and also a CircleCI config file.
+
 ## Project Overview
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
